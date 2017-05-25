@@ -1,0 +1,38 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	background-color: rgb(207, 186, 177);
+}
+
+
+main{
+	width: calc((150px + 10px) * 4 );
+	margin: 0 auto;
+	padding-top: 25px;
+
+}
+img{
+	width: 150px;
+	border-radius: 5px;
+	
+}
+
+.imgWrapper{
+	display: inline-block;
+	width: 150px;
+	margin: 5px;
+}
+
+footer{
+	padding: 20px;
+	text-align: center;
+}
+
+button{
+	padding: 5px 10px;
+	background-color: white;
+	color: rgb(151,75,0);
+}

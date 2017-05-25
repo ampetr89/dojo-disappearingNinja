@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="disappearing" content="">
+	<title>Disappearing RUSH</title>
+	<link rel="stylesheet" href="style.css">
+	<script type="text/javascript" 
+		src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">	
+	</script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+
+			var pic = 'CAhaloeffect.jpg';
+			for(var i=0;i<16;i++){
+				$('main').append('<div class="imgWrapper"><img src="'+pic+'"></div>');
+			}
+
+			$('img').click(function(){
+				$(this).fadeOut(2000);
+			})
+
+			$('button').click(function(){
+				$('img:hidden').fadeIn(2000);
+			});
+
+			$('button').hover(
+				function(){
+					$(this).css('outline', '1px black solid');
+				},
+				function(){
+					$(this).css('outline', 'none');
+				}
+			)
+			
+
+		});
+	</script>
+</head>
+
+<body>
+
+	<main>
+	</main>
+	<footer>
+		<button>Restore</button>
+	</footer>
+
+</body>
+</html>
