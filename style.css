@@ -17,11 +17,11 @@ main{
 img{
 	width: 150px;
 	border-radius: 5px;
-	
 }
 
-.imgWrapper{
+div{
 	display: inline-block;
+	vertical-align: top;
 	width: 150px;
 	margin: 5px;
 }

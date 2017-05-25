@@ -12,9 +12,14 @@
 
 			var pic = 'CAhaloeffect.jpg';
 			for(var i=0;i<16;i++){
-				$('main').append('<div class="imgWrapper"><img src="'+pic+'"></div>');
+				$('main').append('<div><img src="'+pic+'"></div>');
 			}
 
+			$('img').on('load', function(){
+				var imgHeight = $(this).css('height');
+				//console.log('image loaded', $(this).css('height'));
+				$('div').css('height', imgHeight); // texhnically this assignment will be done 16 times..
+			})
 			$('img').click(function(){
 				$(this).fadeOut(2000);
 			})
@@ -33,7 +38,16 @@
 			)
 			
 
-		});
+		}); 
+		/*
+		$(window).load(function() {
+			console.log('window has loaded');
+			var imgHeight = $('img').css('height');
+			console.log('image height', imgHeight);
+			$('div').css('height', imgHeight);
+		});*/
+
+
 	</script>
 </head>
 
